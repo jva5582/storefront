@@ -1,4 +1,4 @@
-/* External CSS */
+/* styles.css */
 body {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -25,4 +25,23 @@ footer {
     text-align: center;
     padding: 0.5rem;
     margin-top: 20px;
+}
+
+/* ===== Form Validation Styling ===== */
+
+/* Invalid inputs: red border + red text */
+.form-control.is-invalid {
+    border-color: #dc3545;
+    color: #dc3545; /* assignment requirement: red text in box */
+}
+
+/* Valid inputs: green border */
+.form-control.is-valid {
+    border-color: #198754;
+    color: inherit; /* reset text color */
+}
+
+/* Force error messages to show when JS toggles them */
+.invalid-feedback.d-block {
+    display: block;
 }
